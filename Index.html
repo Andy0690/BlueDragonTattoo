@@ -25,7 +25,7 @@
               <a class="nav-link active" aria-current="page" href="Index.html" rel="Index">Inicio</a>
               <a class="nav-link" href="QuienSoy.html" rel="Index">¿Quién Soy?</a>
               <a class="nav-link" href="Servicios.html" rel="Index">Servicios</a>
-              <a class="nav-link" href="Cotizacion.html" rel="Index">Cotización</a>
+              <a class="nav-link" href="Formulario.html" rel="Index">Formulario</a>
             </div>
           </div>
         </div>
@@ -61,54 +61,26 @@
 
     <br>
     <br>
-    <div class="col">
-    <div class="container text-center ">
-    <div class="row align-items-start">
-      <div class="llenarCampos">
-      <h2>Antes de llenar los campos para el correo realiza primero la cotización</h2>
-      </div>
-      <br>
-      <br>
-      <br>
-      <div class="d-grid gap-2 mt-3 mb-5">
-        <input class="btn btn-primary" type="button" name="btn-cotizacion" id="btn-cotizacion" value="Primero Cotiza el precio" onclick="redireccionCotizacion()"/>
-      </div>
-    </div>
-    </div>
-    </div>
-    
-    <br>
     <div class="container text-center">
       <div class="row align-items-start">
-        <h2>Contáctame por Correo</h2>
-        <form action="https://formsubmit.co/andresand066@gmail.com" method="post" name="form-Contacto">
-          <br>
-          <div class="row">
-            <div class="col">
-              <label class="form-label" for="nombre">Nombre: </label>
-              <input class="form-control" id="nombre" type="text" name="nombre">
-            </div>
-            <div class="col">
-              <label class="form-label" for="email">Email: </label>
-              <input class="form-control" id="Email" type="email" name="email">
-            </div>
-            </div>
-            <br>
-
-            <div class="col">
-              <label class="form-label" for="subject">Asunto: </label>
-              <input class="form-control" id="subject" type="subject" name="subject">
-            </div>
-
-            <br>
-              <label class="form-label" for="servicio" height="30%"> ¿Qué servicio necesitas? </label>
-              <textarea class="form-control" name="servicio" id="servicio" type="text"></textarea>
-          <div class="d-grid gap-2 mt-3 mb-5">
-            <input class="btn btn-primary" type="submit" name="submit" id="sumbit" value="Enviar" onclick="Email.send()" />
-          </div>
-          </form>
+      <div class="alert alert-info" role="alert">
+    <div id="bienvenida1" class="mensaje1 mt-3"></div>
+    </div>
+    <form id="formulario1">
+      <div class="llenarCampos mt-3 mb-5">
+        <h2>Primero llena estos campos y dale en Enviar</h2>
+        </div>
+      <label>Nombre: <input type="text" id="nombre1" /></label>
+      <label>Año en el que naciste: <input type="text" id="fecha1" maxlength="4" />
+      </label>
+    <div class="d-grid gap-2 mt-5 mb-2">
+      <button id="btn1" class="btn btn-primary" type="submit1" onclick="datos()">Enviar</button>
+    </div>
+    </form>
     </div>
     </div>
+
+  
 
 </body>
 
@@ -124,7 +96,7 @@
           <a class="nav-link active" aria-current="page" href="Index.html" rel="Index">Inicio</a>
           <a class="nav-link" href="QuienSoy.html" rel="Index">¿Quién Soy?</a>
           <a class="nav-link" href="Servicios.html" rel="Index">Servicios</a>
-          <a class="nav-link" href="Cotizacion.html" rel="Index">Cotización</a>
+          <a class="nav-link" href="Formulario.html" rel="Index">Formulario</a>
         </div>
       </div>
     </div>

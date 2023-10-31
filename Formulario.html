@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="assets/images/iconoBcyan.png" type="image/x-icon" sizes="16x16">
-  <title>Cotización</title>
+  <title>Formulario</title>
   <link rel="stylesheet" href="Styles/style.css">
   <meta name="keywords" content="Portafolio, Servicios, HTML, css, JavaScript, Andres Yepes, bluedragon_tattoo_, Blue Dragon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -25,7 +25,7 @@
               <a class="nav-link active" aria-current="page" href="Index.html" rel="Index">Inicio</a>
               <a class="nav-link" href="QuienSoy.html" rel="Index">¿Quién Soy?</a>
               <a class="nav-link" href="Servicios.html" rel="Index">Servicios</a>
-              <a class="nav-link" href="Cotizacion.html" rel="Index">Cotización</a>
+              <a class="nav-link" href="Formulario.html" rel="Index">Formulario</a>
             </div>
           </div>
         </div>
@@ -34,37 +34,43 @@
     
     <br>
     <br>
-    <section id="form-cotizacion">
-    <div class="input-group mb-3">   
-    <div class="mb-3">
-      <label for="basic-url" class="form-label">Realiza tú cotización</label>
-      <div class="input-group">
-        <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
-        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+<div class="imgimg end-50 top-50"> 
+<img class="imgIndex" src="assets/images/logoIndex.png" alt="Este es el logo">
+</div> 
+<br>
+<br>
+<div class="container text-center">
+  <div class="row align-items-start">
+    <h2 class="h2Contactame">Contáctame por Correo</h2>
+    <form action="https://formsubmit.co/andresand066@gmail.com" method="post" name="form-Contacto">
+      <br>
+      <div class="row">
+        <div class="col">
+          <label class="form-label" for="nombre">Nombre: </label>
+          <input class="form-control" id="nombre" type="text" name="nombre">
+        </div>
+        <div class="col">
+          <label class="form-label" for="email">Email: </label>
+          <input class="form-control" id="Email" type="email" name="email">
+        </div>
+        </div>
+        <br>
+
+        <div class="col">
+          <label class="form-label" for="subject">Asunto: </label>
+          <input class="form-control" id="subject" type="subject" name="subject">
+        </div>
+
+        <br>
+          <label class="form-label" for="servicio" height="30%"> ¿Qué servicio necesitas? </label>
+          <textarea class="form-control" name="servicio" id="servicio" type="text"></textarea>
+      <br>
+          <div class="d-grid gap-2 mt-3 mb-5">
+        <input class="btn btn-primary" type="submit" name="submit" id="sumbit" value="Enviar" onclick="Email.send()" />
       </div>
-    </div>
-    
-    <div class="input-group mb-3">
-      <span class="input-group-text">$</span>
-      <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-      <span class="input-group-text">.00</span>
-      <div class="form-text text-white" id="basic-addon4">Recuerda que esto solo es un aproximado, el precio puede variar</div>
-    </div>
-    
-    <div class="input-group mb-3">
-      <input type="text" class="form-control" placeholder="Username" aria-label="Username">
-      <span class="input-group-text">@</span>
-      <input type="text" class="form-control" placeholder="Server" aria-label="Server">
-    </div>
-    
-    <div class="input-group">
-      <span class="input-group-text">With textarea</span>
-      <textarea class="form-control" aria-label="With textarea"></textarea>
-    </div>
-  </div>
-  </section>
-<br>
-<br>
+      </form>
+</div>
+</div>
 
 </body>
 
@@ -83,10 +89,14 @@
               <a class="nav-link active" aria-current="page" href="Index.html" rel="Index">Inicio</a>
               <a class="nav-link" href="QuienSoy.html" rel="Index">¿Quién Soy?</a>
               <a class="nav-link" href="Servicios.html" rel="Index">Servicios</a>
-              <a class="nav-link" href="Cotizacion.html" rel="Index">Cotización</a>
+              <a class="nav-link" href="Formulario.html" rel="Index">Formulario</a>
             </div>
           </div>
         </div>
       </nav>
     </footer>  
+
+    
+    <script src="bluedragon.js"></script>
+
 </html>

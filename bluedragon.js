@@ -1,35 +1,40 @@
-// let persona = {
-//     nombre : "Ika",
-//     edad : 20 ,
-//     fecha : 4,
-//     Paìs : 'Colombia',
-// }
 
-// if (edad >= 18) {
+function datos(evento) {
+	evento.preventDefault();
 
-//     console.log("Eres mayor de edad");
-    
-// } else {
+var nombre = document.querySelector("#nombre1").value;
+var fecha = document.querySelector("#fecha1").value;
+var bienvenida = document.querySelector("#bienvenida1");
+var mensaje; 
+var mensajeEdad;
 
-//     console.log('Necesitas la compañía de un adulto');
-    
-// }
+if (fecha >= 2005 ) {
+    mensajeEdad = " eres menor de edad ";
+  }  else {
+    location.href="Formulario.html"
+  }
 
-alert ('¡Bienvenido a Blue Dragon Tattoo!');
+  mensaje =
+    "<p>¡Bienvenid@, " +
+    nombre +
+    mensajeEdad +
+	" y necesitas la supervisión de un adulto"
+    "</p>";
 
-function redireccionCotizacion() {
-	location.href="Cotizacion.html";
+  bienvenida.innerHTML = mensaje;
+
+}
+var miForm = document.querySelector("#formulario1");
+
+miForm.addEventListener("submit", datos);
+
+
+function redireccionFormulario() {
+	location.href="Formulario.html";
 }
 
-function precioCotizacion(params) {
 
-	if (condition) {
-	
-	} else {
-		
-	}
-	
-}
+
 
 
 
